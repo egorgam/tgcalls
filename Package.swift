@@ -35,9 +35,7 @@ let package = Package(
                       "tgcalls/platform/darwin/VideoCameraCapturer.mm",
                       "tgcalls/platform/darwin/VideoCameraCapturer.h",
                       "tgcalls/platform/darwin/CustomExternalCapturer.mm",
-                      "tgcalls/platform/darwin/CustomExternalCapturer.h",
-                      "tgcalls/legacy/InstanceImplLegacy.h",
-                      "tgcalls/legacy/InstanceImplLegacy.cpp"
+                      "tgcalls/platform/darwin/CustomExternalCapturer.h"
                      ],
             publicHeadersPath: "macos/PublicHeaders",
             cxxSettings: [
@@ -46,6 +44,7 @@ let package = Package(
                 .headerSearchPath("macos/PublicHeaders"),
                 .headerSearchPath("SharedHeaders/webrtc"),
                 .headerSearchPath("SharedHeaders/webrtc/third_party/abseil-cpp"),
+                .headerSearchPath("SharedHeaders/webrtc/third_party/abseil-cpp/absl"),
                 .headerSearchPath("SharedHeaders/webrtc/sdk/objc"),
                 .headerSearchPath("SharedHeaders/webrtc/sdk/objc/components/renderer/metal"),
                 .headerSearchPath("SharedHeaders/webrtc/sdk/objc/components/video_codec"),
