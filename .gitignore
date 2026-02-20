@@ -3,3 +3,4 @@
 *.*~
 SharedHeaders/*
 .build
+.swiftpm/
